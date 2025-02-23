@@ -1,10 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Action } from "@/types/types.ts";
 import path from "path";
+import fs from "node:fs";
 
-const fs = require("node:fs");
-
-let i: number = 0;
+// const fs = require("node:fs");
 
 export async function POST(req: NextRequest, res: NextResponse) {
   try {

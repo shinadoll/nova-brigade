@@ -4,6 +4,11 @@ var lastID
 var lastAction
 signal newAction
 
+class Action:
+	var userID: int
+	var shortName: String
+	var displayName: String
+
 func _ready():
 	# Create an HTTP request node and connect its completion signal.
 	makeRequest()
@@ -20,15 +25,15 @@ func _ready():
 func _http_request_completed(result, response_code, headers, body):
 	var json = JSON.new()
 	json.parse(body.get_string_from_utf8())
-	var response = json.get_data()
+	var action = json.get_data()
 	
 		# Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
-	if (response):
-		if (lastID != response.id):
-			lastID = response.id
-			lastAction = response
+	if (action):
+		if (lastID != action.userID):
+			lastID = action.userID
+			lastAction = action
 		
-			newAction.emit(response)
+			newAction.emit(action)
 
 func makeRequest():
 	var http_request = HTTPRequest.new()

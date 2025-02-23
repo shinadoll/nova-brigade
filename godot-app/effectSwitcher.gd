@@ -22,7 +22,7 @@ func processAction(action):
 	disentangle.hide()
 	recombobulate.hide()
 	
-	match (action.actionCode):
+	match (action.shortName):
 		"transubstantiate":
 			transubstantiate.show()
 		"disentangle":
