@@ -2,7 +2,5 @@
 
 [ext_resource type="Script" path="res://net.gd" id="1_jns1d"]
 
-[node name="Node2D" type="Node2D"]
-
-[node name="HTTPRequest" type="HTTPRequest" parent="."]
+[node name="HTTPRequest" type="HTTPRequest"]
 script = ExtResource("1_jns1d")

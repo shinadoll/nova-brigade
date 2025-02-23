@@ -1,5 +1,9 @@
 extends HTTPRequest
 
+var lastID
+var lastAction
+signal newAction
+
 func _ready():
 	# Create an HTTP request node and connect its completion signal.
 	makeRequest()
@@ -17,9 +21,14 @@ func _http_request_completed(result, response_code, headers, body):
 	var json = JSON.new()
 	json.parse(body.get_string_from_utf8())
 	var response = json.get_data()
-
-	# Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
-	print(response.value)
+	
+		# Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
+	if (response):
+		if (lastID != response.id):
+			lastID = response.id
+			lastAction = response
+		
+			newAction.emit(response)
 
 func makeRequest():
 	var http_request = HTTPRequest.new()
@@ -30,6 +39,8 @@ func makeRequest():
 	var error = http_request.request("http://localhost:3000/values.json")
 	if error != OK:
 		push_error("An error occurred in the HTTP request.")
+	
+	return 
 
 func _process(delta):
-	makeRequest()
+	var recentRequest = makeRequest()

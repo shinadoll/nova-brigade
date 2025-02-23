@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { NextApiResponse } from "next";
 import path from "path";
 
 const fs = require("node:fs");
@@ -10,6 +9,8 @@ export async function POST(req: NextRequest, res: NextResponse) {
   try {
     var dataJson;
 
+    let reqJson = await req.json();
+
     await fs.readFile(
       // "/home/dreamfunicular/Code/TriangleGJ25/next-app/public/values.json",
       path.join(process.cwd(), "/public/values.json"),
@@ -17,10 +18,8 @@ export async function POST(req: NextRequest, res: NextResponse) {
       (err: Error, data: string) => {
         dataJson = JSON.parse(data);
 
-        console.log("Data JSON");
-        console.log(dataJson);
-
-        dataJson.value++;
+        dataJson.id = Math.floor(Math.random() * 10000000);
+        dataJson.actionCode = reqJson.actionCode;
 
         let contents = JSON.stringify(dataJson);
 
