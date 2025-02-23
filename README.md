@@ -21,16 +21,16 @@ Instead of adding additional endpoints, little-used behavior is routed through t
 
 ```
 Action:
-shortName       string
-displayName     string
-userID          number
+shortName       string      // Internal name used for an action
+displayName     string      // Action's name as it appears to the user
+userID          number      // The ID of the user who sent the
 
 PlayerState:
-userID          number
-characterName   string
+userID          number      // Session-persistent random number representing a specific user
+characterName   string      //
 hp              number
-actions         Action[]
+actions         Action[]    // Listl of actions available to the user at the time of sending.
 
 StateUpdate:
-modifiedCharacterStates CharacterState[]
+modifiedCharacterStates CharacterState[] // List of character states which have been changed, to be broken up by the server.
 ```
