@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Action } from "@/types/types.ts";
 import path from "path";
 
 const fs = require("node:fs");
@@ -7,34 +8,24 @@ let i: number = 0;
 
 export async function POST(req: NextRequest, res: NextResponse) {
   try {
-    var dataJson;
+    var dataJson: Action;
 
-    let reqJson = await req.json();
+    let reqJson: Action = await req.json();
 
-    await fs.readFile(
-      // "/home/dreamfunicular/Code/TriangleGJ25/next-app/public/values.json",
+    reqJson.userID = Math.floor(Math.random() * 100000);
+
+    let contents = JSON.stringify(reqJson);
+
+    console.log("Contents:");
+    console.log(contents);
+
+    fs.writeFile(
       path.join(process.cwd(), "/public/values.json"),
-      "utf8",
+      contents,
       (err: Error, data: string) => {
-        dataJson = JSON.parse(data);
-
-        dataJson.id = Math.floor(Math.random() * 10000000);
-        dataJson.actionCode = reqJson.actionCode;
-
-        let contents = JSON.stringify(dataJson);
-
-        console.log("Contents:");
-        console.log(contents);
-
-        fs.writeFile(
-          path.join(process.cwd(), "/public/values.json"),
-          contents,
-          (err: Error, data: string) => {
-            if (err) {
-              return NextResponse.json({ status: 200 });
-            }
-          }
-        );
+        if (err) {
+          return NextResponse.json({ status: 500 });
+        }
       }
     );
   } catch {
