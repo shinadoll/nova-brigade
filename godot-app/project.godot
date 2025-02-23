@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="Triangle Game Jam 25 Godot View"
+run/main_scene="res://Scenes/battle_scene.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+PlayerParty="*res://Scenes/player_party.tscn"
+EnemyParty="*res://Scenes/enemy_party.tscn"
 
 [rendering]
 

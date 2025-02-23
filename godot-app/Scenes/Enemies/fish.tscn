@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgidmk0uh1og6"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_bjqm7"]
+[ext_resource type="PackedScene" uid="uid://1wsmb6ysvx1c" path="res://Scenes/Actions/test_action.tscn" id="2_pbsvs"]
+
+[node name="Fish" type="Node"]
+script = ExtResource("1_bjqm7")
+statsDefault = {
+"atk": 0,
+"def": 0,
+"hp": 20,
+"lck": 0,
+"mAtk": 0,
+"mDef": 0,
+"mp": 0,
+"spd": 5
+}
+
+[node name="TestAction" parent="." instance=ExtResource("2_pbsvs")]
+displayName = "Fish"

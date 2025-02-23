@@ -1,0 +1,10 @@
+- Setup battle
+	- Party
+	- Characters
+		- Stats
+		- Moves
+	
+	- Turn order
+	- Move execution
+	- Death checking
+	- Lose/Win

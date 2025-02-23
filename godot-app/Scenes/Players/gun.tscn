@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://byin41y2o4yn3"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_ic6jo"]
+[ext_resource type="PackedScene" uid="uid://1wsmb6ysvx1c" path="res://Scenes/Actions/test_action.tscn" id="2_cn5vk"]
+
+[node name="Gun" type="Node"]
+script = ExtResource("1_ic6jo")
+characterName = "Gun"
+statsDefault = {
+"atk": 0,
+"def": 0,
+"hp": 10,
+"lck": 0,
+"mAtk": 0,
+"mDef": 0,
+"mp": 0,
+"spd": 10
+}
+
+[node name="TestAction" parent="." instance=ExtResource("2_cn5vk")]
+displayName = "Gun"

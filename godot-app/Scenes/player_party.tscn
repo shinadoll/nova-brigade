@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5hguabq1120"]
+
+[ext_resource type="Script" path="res://Scripts/party.gd" id="1_ibagf"]
+[ext_resource type="PackedScene" uid="uid://cdqgu7sg0snna" path="res://Scenes/Players/hammer.tscn" id="2_mfdon"]
+[ext_resource type="PackedScene" uid="uid://byin41y2o4yn3" path="res://Scenes/Players/gun.tscn" id="3_dpo0y"]
+
+[node name="PlayerParty" type="Node"]
+script = ExtResource("1_ibagf")
+partyType = "player"
+size = 2
+
+[node name="Hammer" parent="." instance=ExtResource("2_mfdon")]
+
+[node name="Gun" parent="." instance=ExtResource("3_dpo0y")]
