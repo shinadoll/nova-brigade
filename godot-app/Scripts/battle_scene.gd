@@ -84,9 +84,10 @@ func doTurn():
 				nextAction.TARGET_TYPES.SINGLE_ALLY:
 					newTarget = [PlayerParty.getCharacter(0)]
 					for j in range(PlayerParty.size):
+						if newTarget[0].stats["hp"] <= 0:
+							newTarget = [PlayerParty.get_child(j)]
 						if newTarget[0].stats[nextAction.stat] > PlayerParty.get_child(j).stats[nextAction.stat]:
-							if PlayerParty.get_child(j).stats["hp"] > 0:
-								newTarget = [PlayerParty.get_child(j)]
+							newTarget = [PlayerParty.get_child(j)]
 				nextAction.TARGET_TYPES.SINGLE_ENEMY:
 					newTarget = [EnemyParty.getCharacter(0)]
 					for j in range(EnemyParty.size):

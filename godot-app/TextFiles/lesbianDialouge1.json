@@ -7,37 +7,36 @@
 "nextTextPath" : "res://TextFiles/lesbianDialouge2.json",
 },
 {
-"id" : 1,
 "speaker" : "Lizelle and Beatrice",
 "frame" : [0, 0, 0, 1],
-"text" : "Give yourself to desire. Lust for temptation. Yearn for what was once unattainable. Free yourself from the boundaries of life. Right and wrong shall render themselves meaningless in our new haven. All that ails thee shall be restored. Life will become pure and eternal bliss!"
+"text" : "Give yourself to desire. Lust for temptation. Yearn for what was once unattainable. Free yourself from the boundaries of life."
 },
 {
-"id" : 2,
+"speaker" : "Lizelle and Beatrice",
+"frame" : [0, 0, 0, 1],
+"text" : "Right and wrong shall render themselves meaningless in our new haven. All that ails thee shall be restored. Life will become pure and eternal bliss!"
+},
+{
 "speaker" : "Dizzy",
 "frame" : [2, 0, 0, 0],
 "text" : "You can’t do this! And what does this even have to do with Cosmic Express?!"
 },
 {
-"id" : 3,
 "speaker" : "Ashe",
 "frame" : [0, 2, 0, 0],
 "text" : "Good point."
 },
 {
-"id" : 4,
 "speaker" : "Terra",
 "frame" : [0, 0, 2, 0],
 "text" : "Yeah... a train as a choice for eternal bliss is pretty questionable."
 },
 {
-"id" : 5,
 "speaker" : "Lizelle",
 "frame" : [0, 0, 0, 0],
 "text" : "We... really like trains..."
 },
 {
-"id" : 6,
 "speaker" : "Beatrice",
 "frame" : [0, 0, 0, 1],
 "text" : "We LOVE them! This is the perfect one for our new haven!"

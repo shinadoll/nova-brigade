@@ -1,7 +1,7 @@
 [
 {
 "cast" : ["Dizzy", "Ashe", "Terra", "Lizbea"],
-"initialCastState" : [0, 0, 0, 0],
+"initialCastState" : [0, 0, 0, null],
 "battleEnemies" : null,
 "reset" : true,
 "nextTextPath" : null,
@@ -10,7 +10,7 @@
 {
 "id" : 1,
 "speaker" : "Lizbea",
-"frame" : [0, 0, 0, 2],
+"frame" : [0, 0, 0, null],
 "text" : "My love... even in death. We shall go out, hand in hand."
 },
 {

@@ -11,7 +11,7 @@ texture = ExtResource("2_p6f66")
 statsDefault = {
 "atk": 25,
 "def": 30,
-"hp": 10,
+"hp": 80,
 "mp": 0,
 "spd": 15
 }
