@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbqqx1rqmyjcv"]
+
+[ext_resource type="Script" path="res://Scripts/text_scene.gd" id="1_c60fh"]
+[ext_resource type="Texture2D" uid="uid://nfidtfdvhk12" path="res://Assets/stars.png" id="2_4sikj"]
+[ext_resource type="Texture2D" uid="uid://bdf6lx8k5d8wm" path="res://Assets/trainbg1.png" id="2_anhdp"]
+
+[node name="TextScene" type="Node2D"]
+script = ExtResource("1_c60fh")
+
+[node name="StarBG" type="Sprite2D" parent="."]
+position = Vector2(960, 544)
+scale = Vector2(0.5, 0.496296)
+texture = ExtResource("2_4sikj")
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_anhdp")
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+position = Vector2(1544, 520)
+scale = Vector2(0.28, 0.28)
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+position = Vector2(321, 504)
+scale = Vector2(0.28, 0.28)
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(616, 512)
+scale = Vector2(0.28, 0.28)
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(858, 576)
+scale = Vector2(0.28, 0.28)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="UI"]
+offset_left = 24.0
+offset_top = 856.0
+offset_right = 1896.0
+offset_bottom = 1056.0
+color = Color(0, 0.202689, 0.439442, 1)
+
+[node name="TextBox" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = -208.0
+offset_right = -40.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 42
+text = "Test"
+autowrap_mode = 3
+
+[node name="NameLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 776.0
+offset_right = 184.0
+offset_bottom = 843.0
+theme_override_font_sizes/font_size = 48
+text = "Test"

@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2yjf6vpfgdp3"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_tcap7"]
+[ext_resource type="Texture2D" uid="uid://cjkc2fhahhl31" path="res://Assets/critter_p2.png" id="2_25plr"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="2_qfwas"]
+
+[node name="CritterFinal" type="Node"]
+script = ExtResource("1_tcap7")
+characterName = "Pibby?"
+texture = ExtResource("2_25plr")
+statsDefault = {
+"atk": 15,
+"def": 10,
+"hp": 15,
+"mp": 0,
+"spd": 10
+}
+
+[node name="Scratch" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("2_qfwas")
+shortName = "scratch"
+displayName = "Scratch"
+description = "Pibby? scratched "
+actor = NodePath("..")
+stat = "hp"
+value = 20
+
+[node name="Stare" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("2_qfwas")
+shortName = "stare"
+displayName = "Stare"
+description = "Pibby? stares blankly at "
+actor = NodePath("..")
+stat = "def"
+value = 5

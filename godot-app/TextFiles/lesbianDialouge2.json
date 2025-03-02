@@ -1,0 +1,27 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "Lizbea"],
+"initialCastState" : [0, 0, 0, 0],
+"battleEnemies" : ["res://Scenes/Enemies/lesbians_final.tscn"],
+"reset" : false,
+"nextTextPath" : "res://TextFiles/lesbianDialouge2.json",
+},
+{
+"id" : 1,
+"speaker" : "Lizelle",
+"frame" : [0, 0, 0, 2],
+"text" : "At long last... Our ultimate desire. My love, we shall become one. It’s time!"
+},
+{
+"id" : 2,
+"speaker" : "Beatrice",
+"frame" : [0, 0, 0, 2],
+"text" : "I’ve waited so long for this moment. We can say goodbye to this disgusting world! Leave it all behind... and live in everlasting bliss!"
+},
+{
+"id" : 3,
+"speaker" : "Lizelle and Beatrice",
+"frame" : [0, 0, 0, 3],
+"text" : "I love you. Let us finally become one. AND SQUASH THESE PESKY VERMIN! OHH HO HO HO~!"
+},
+]

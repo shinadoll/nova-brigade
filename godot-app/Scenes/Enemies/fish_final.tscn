@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxvywrudjxxkw"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_jehsg"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="2_1j0mo"]
+[ext_resource type="Texture2D" uid="uid://dicao1gow8buv" path="res://Assets/Water_p2.png" id="2_c5bph"]
+
+[node name="FishFinal" type="Node"]
+script = ExtResource("1_jehsg")
+characterName = "Gilly?"
+texture = ExtResource("2_c5bph")
+statsDefault = {
+"atk": 20,
+"def": 20,
+"hp": 25,
+"mp": 0,
+"spd": 20
+}
+
+[node name="Splash" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("2_1j0mo")
+shortName = "splash"
+displayName = "Splash"
+description = "Gilly? splashed high pressure water at "
+actor = NodePath("..")
+stat = "hp"
+value = 30
+
+[node name="StickyMucus" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("2_1j0mo")
+shortName = "stickyMucus"
+displayName = "Sticky Mucus"
+description = "Gilly uses a sticky mucus to cover "
+actor = NodePath("..")
+stat = "spd"
+value = 5

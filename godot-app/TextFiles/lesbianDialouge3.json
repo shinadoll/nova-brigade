@@ -1,0 +1,45 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "Lizbea"],
+"initialCastState" : [0, 0, 0, 0],
+"battleEnemies" : [],
+"reset" : true,
+"nextTextPath" : null,
+},
+{
+"id" : 1,
+"speaker" : "Lizbea",
+"frame" : [0, 0, 0, 2],
+"text" : "My love... even in death. We shall go out, hand in hand."
+},
+{
+"id" : 2,
+"speaker" : "Dizzy",
+"frame" : [1, 0, 0, null],
+"text" : "We did it... But, I wonder if we did the right thing..."
+},
+{
+"id" : 3,
+"speaker" : "Ashe",
+"frame" : [1, 3, 0, null],
+"text" : "Well it was our mission objective. But, this was wayyy more than the mission originally said. We better get a hefty pay increase."
+},
+{
+"id" : 4,
+"speaker" : "Terra",
+"frame" : [1, 3, 1, null],
+"text" : "Well, anyway, time to drive this baby back to base! MWEHEHEHE!!"
+},
+{
+"id" : 5,
+"speaker" : "Dizzy",
+"frame" : [1, 3, 1, null],
+"text" : "OOH!! I call shotgun! :D "
+},
+{
+"id" : 6,
+"speaker" : "Ashe",
+"frame" : [1, 3, 1, null],
+"text" : "*sigh* Let's just get back..."
+},
+]

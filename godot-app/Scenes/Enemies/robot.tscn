@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://du5fwjmrml3rl"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_typfg"]
+[ext_resource type="Texture2D" uid="uid://d4a4j5osf28dw" path="res://Assets/ComputerBoss_sprite.png" id="2_wk3rp"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="3_dniuy"]
+
+[node name="Robot" type="Node"]
+script = ExtResource("1_typfg")
+characterName = "C.O.I.L."
+texture = ExtResource("2_wk3rp")
+statsDefault = {
+"atk": 15,
+"def": 25,
+"hp": 30,
+"mp": 0,
+"spd": 20
+}
+
+[node name="Bash" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_dniuy")
+shortName = "bash"
+displayName = "Bash"
+description = "C.O.I.L uses the command line to bash "
+actor = NodePath("..")
+stat = "hp"
+value = 35
+
+[node name="Laminate" type="Node" parent="."]
+script = ExtResource("3_dniuy")
+shortName = "laminate"
+displayName = "Laminate"
+description = "C.O.I.L laminates "
+stat = "atk"
+value = 5

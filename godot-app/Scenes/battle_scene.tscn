@@ -1,16 +1,88 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1fkcnyrs3q6"]
+[gd_scene load_steps=10 format=3 uid="uid://b1fkcnyrs3q6"]
 
 [ext_resource type="Script" path="res://Scripts/battle_scene.gd" id="1_sdu27"]
-[ext_resource type="Script" path="res://Scenes/demoNode.gd" id="2_6qr8b"]
+[ext_resource type="Texture2D" uid="uid://u8bsgjghne2v" path="res://Assets/trainbg2.png" id="2_adhvx"]
+[ext_resource type="Texture2D" uid="uid://nfidtfdvhk12" path="res://Assets/stars.png" id="2_eeqkx"]
+[ext_resource type="PackedScene" uid="uid://c2fsei8bv0wo1" path="res://Scenes/net.tscn" id="3_b02ex"]
+[ext_resource type="PackedScene" uid="uid://cgjpo42vgq0sq" path="res://Scenes/character_visual.tscn" id="3_cq1uc"]
+[ext_resource type="Texture2D" uid="uid://bvvkm2xhcbkse" path="res://Assets/BackSprites/P1_Back_Sprite.png" id="3_ryfy5"]
+[ext_resource type="Texture2D" uid="uid://d38wn88kjode7" path="res://Assets/BackSprites/P2_Back_Sprite.png" id="4_18md0"]
+[ext_resource type="Texture2D" uid="uid://clbmbnfonb5pr" path="res://Assets/BackSprites/P3_Back_Sprite.png" id="5_712pq"]
+[ext_resource type="Texture2D" uid="uid://do48foeq6l52g" path="res://Assets/WaterBoss_sprite.png" id="6_mead7"]
 
 [node name="BattleScene" type="Node2D"]
 script = ExtResource("1_sdu27")
 
-[node name="Node" type="Node" parent="."]
-script = ExtResource("2_6qr8b")
+[node name="StarBG" type="Sprite2D" parent="."]
+position = Vector2(960, 544)
+scale = Vector2(0.5, 0.496296)
+texture = ExtResource("2_eeqkx")
 
-[node name="Timer" type="Timer" parent="Node"]
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_adhvx")
+
+[node name="CharacterVisual4" parent="." groups=["CharacterVisual"] instance=ExtResource("3_cq1uc")]
+position = Vector2(248, 601)
+
+[node name="Sprite2D" parent="CharacterVisual4" index="0"]
+position = Vector2(-1, 0)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_ryfy5")
+
+[node name="CharacterVisual" parent="." groups=["CharacterVisual"] instance=ExtResource("3_cq1uc")]
+position = Vector2(549, 643)
+index = 1
+
+[node name="Sprite2D" parent="CharacterVisual" index="0"]
+position = Vector2(0, 0)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_18md0")
+
+[node name="CharacterVisual2" parent="." groups=["CharacterVisual"] instance=ExtResource("3_cq1uc")]
+position = Vector2(840, 715)
+index = 2
+
+[node name="Sprite2D" parent="CharacterVisual2" index="0"]
+position = Vector2(0, 0)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_712pq")
+
+[node name="CharacterVisual3" parent="." groups=["CharacterVisual"] instance=ExtResource("3_cq1uc")]
+position = Vector2(1523, 418)
+index = 3
+
+[node name="Sprite2D" parent="CharacterVisual3" index="0"]
+texture = ExtResource("6_mead7")
+
+[node name="HTTPRequest" parent="." instance=ExtResource("3_b02ex")]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 24.0
+offset_top = 856.0
+offset_right = 1896.0
+offset_bottom = 1056.0
+color = Color(0, 0.202689, 0.439442, 1)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 872.0
+offset_right = 1880.0
+offset_bottom = 1040.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+text = "test"
+
+[node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
-autostart = true
 
-[connection signal="timeout" from="Node/Timer" to="Node" method="_on_timer_timeout"]
+[editable path="CharacterVisual4"]
+[editable path="CharacterVisual"]
+[editable path="CharacterVisual2"]
+[editable path="CharacterVisual3"]

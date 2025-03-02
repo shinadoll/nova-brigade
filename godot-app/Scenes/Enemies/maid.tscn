@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq117w6dy0h3l"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_vua8m"]
+[ext_resource type="Texture2D" uid="uid://dcjtaxusf6f33" path="res://Assets/NerdBoss_sprite.png" id="2_fku5b"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="3_bt200"]
+
+[node name="Maid" type="Node"]
+script = ExtResource("1_vua8m")
+characterName = "Madeline"
+texture = ExtResource("2_fku5b")
+statsDefault = {
+"atk": 25,
+"def": 15,
+"hp": 30,
+"mp": 20,
+"spd": 20
+}
+
+[node name="Sweep" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_bt200")
+shortName = "sweep"
+displayName = "Sweep"
+description = "Madeline swept up "
+actor = NodePath("..")
+stat = "hp"
+value = 40
+
+[node name="YaoiBeam" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_bt200")
+shortName = "yoaiBeam"
+displayName = "Yoai Beam"
+description = "Madeline yaps about her favorite yaoi to "
+actor = NodePath("..")
+stat = "def"
+value = -5

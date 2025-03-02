@@ -1,14 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5hguabq1120"]
+[gd_scene load_steps=5 format=3 uid="uid://b5hguabq1120"]
 
 [ext_resource type="Script" path="res://Scripts/party.gd" id="1_ibagf"]
-[ext_resource type="PackedScene" uid="uid://cdqgu7sg0snna" path="res://Scenes/Players/hammer.tscn" id="2_mfdon"]
-[ext_resource type="PackedScene" uid="uid://byin41y2o4yn3" path="res://Scenes/Players/gun.tscn" id="3_dpo0y"]
+[ext_resource type="PackedScene" uid="uid://cdqgu7sg0snna" path="res://Scenes/Players/leader.tscn" id="2_mfdon"]
+[ext_resource type="PackedScene" uid="uid://byin41y2o4yn3" path="res://Scenes/Players/goth.tscn" id="3_23vwr"]
+[ext_resource type="PackedScene" uid="uid://dc7f7tlcll2pl" path="res://Scenes/Players/brains.tscn" id="4_uqp58"]
 
 [node name="PlayerParty" type="Node"]
 script = ExtResource("1_ibagf")
 partyType = "player"
-size = 2
+size = 3
 
-[node name="Hammer" parent="." instance=ExtResource("2_mfdon")]
+[node name="Leader" parent="." instance=ExtResource("2_mfdon")]
 
-[node name="Gun" parent="." instance=ExtResource("3_dpo0y")]
+[node name="Goth" parent="." instance=ExtResource("3_23vwr")]
+
+[node name="Brains" parent="." instance=ExtResource("4_uqp58")]

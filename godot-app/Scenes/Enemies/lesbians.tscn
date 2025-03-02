@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4fgqmhuvtj0w"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_j6vn0"]
+[ext_resource type="Texture2D" uid="uid://s4qb3m8xjonm" path="res://Assets/FinalBoss_sprite.png" id="2_sp8ny"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="3_xjn1q"]
+
+[node name="Lesbians" type="Node"]
+script = ExtResource("1_j6vn0")
+characterName = "Lizelle/Beatrice"
+texture = ExtResource("2_sp8ny")
+statsDefault = {
+"atk": 25,
+"def": 25,
+"hp": 40,
+"mp": 0,
+"spd": 20
+}
+
+[node name="YuriBeam" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_xjn1q")
+shortName = "yuriBeam"
+displayName = "Yuri Beam"
+description = "Lizell and Beatrice blasted concentrated yuri at "
+actor = NodePath("")
+stat = "hp"
+value = 50
+
+[node name="UnlimitedLove" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_xjn1q")
+shortName = "unlimitedLove"
+displayName = "Unlimited Love"
+description = "Lizelle and Beatrice show their undying love for "
+actor = NodePath("..")
+targetType = 1
+stat = "atk"
+value = -10

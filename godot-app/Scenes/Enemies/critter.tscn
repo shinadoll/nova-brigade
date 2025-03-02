@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7vo6s2qbytkw"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_svh06"]
+[ext_resource type="Texture2D" uid="uid://dkfijcv0ytj3q" path="res://Assets/CritterBoss_sprite.png" id="2_vmsm5"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="3_pgake"]
+
+[node name="Critter" type="Node"]
+script = ExtResource("1_svh06")
+characterName = "Pibby"
+texture = ExtResource("2_vmsm5")
+statsDefault = {
+"atk": 10,
+"def": 10,
+"hp": 10,
+"mp": 0,
+"spd": 10
+}
+
+[node name="Scratch" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_pgake")
+shortName = "scratch"
+displayName = "Scratch"
+description = "Pibby scratched "
+actor = NodePath("..")
+stat = "hp"
+value = 20
+
+[node name="Stare" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_pgake")
+shortName = "stare"
+displayName = "Stare"
+description = "Pibby stares blankly at "
+actor = NodePath("..")
+stat = "def"
+value = 5

@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://c8cg031gtonew"]
+
+[ext_resource type="Texture2D" uid="uid://dt63c6mvk0hvp" path="res://PlaceholderSprites/ralsei.jpg" id="1_hyov0"]
+[ext_resource type="Script" path="res://Scripts/effectSwitcher.gd" id="2_1g8fr"]
+[ext_resource type="Texture2D" uid="uid://dqu11cgmiwuv1" path="res://PlaceholderSprites/gun.jpg" id="2_ivqdv"]
+[ext_resource type="Texture2D" uid="uid://dcj23ydkjwhfs" path="res://PlaceholderSprites/aglet.jpeg" id="3_rwn40"]
+[ext_resource type="Texture2D" uid="uid://d1ri88e8svhpi" path="res://PlaceholderSprites/optimusPrime.jpg" id="4_a6bqv"]
+[ext_resource type="Texture2D" uid="uid://cualjkdxtfst5" path="res://PlaceholderSprites/transubstantiate.jpg" id="4_q04lt"]
+[ext_resource type="PackedScene" uid="uid://c2fsei8bv0wo1" path="res://Scenes/net.tscn" id="5_mu7my"]
+
+[node name="networkingDemo" type="Node2D"]
+
+[node name="character" type="Sprite2D" parent="."]
+position = Vector2(140, 430)
+scale = Vector2(0.211089, 0.211089)
+texture = ExtResource("1_hyov0")
+
+[node name="effectSwitcher" type="Node2D" parent="."]
+script = ExtResource("2_1g8fr")
+
+[node name="gun" type="Sprite2D" parent="effectSwitcher"]
+visible = false
+position = Vector2(454.971, 288)
+scale = Vector2(0.148571, 0.148571)
+texture = ExtResource("2_ivqdv")
+
+[node name="transubstantiate" type="Sprite2D" parent="effectSwitcher"]
+visible = false
+position = Vector2(400, 297)
+scale = Vector2(0.382353, 0.382353)
+texture = ExtResource("4_q04lt")
+
+[node name="disentangle" type="Sprite2D" parent="effectSwitcher"]
+visible = false
+position = Vector2(406.5, 283.75)
+scale = Vector2(0.30375, 0.211069)
+texture = ExtResource("3_rwn40")
+
+[node name="recombobulate" type="Sprite2D" parent="effectSwitcher"]
+visible = false
+position = Vector2(365, 333)
+scale = Vector2(0.183333, 0.171863)
+texture = ExtResource("4_a6bqv")
+
+[node name="netManager" parent="effectSwitcher" instance=ExtResource("5_mu7my")]
+
+[connection signal="newAction" from="effectSwitcher/netManager" to="effectSwitcher" method="processAction"]

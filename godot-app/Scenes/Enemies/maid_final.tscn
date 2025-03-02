@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://bby731lwx7m8f"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_xhma0"]
+[ext_resource type="Texture2D" uid="uid://beoilt6762vf4" path="res://Assets/nerd_p2.png" id="2_csn1k"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="2_xhmlm"]
+
+[node name="MaidFinal" type="Node"]
+script = ExtResource("1_xhma0")
+characterName = "Madeline"
+texture = ExtResource("2_csn1k")
+statsDefault = {
+"atk": 25,
+"def": 20,
+"hp": 35,
+"mp": 0,
+"spd": 20
+}
+
+[node name="Sweep" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("2_xhmlm")
+shortName = "sweep"
+displayName = "Sweep"
+description = "Acolyte Madeline swept up "
+actor = NodePath("..")
+stat = "hp"
+value = 40
+
+[node name="YaoiBeam" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("2_xhmlm")
+shortName = "yoaiBeam"
+displayName = "Yoai Beam"
+description = "Acolyte Madeline yaps about her favorite yaoi to "
+actor = NodePath("..")
+stat = "def"
+value = 5

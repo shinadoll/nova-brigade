@@ -1,0 +1,14 @@
+[
+{
+"id" : 0,
+"cast" : [null],
+"battleEnemies" : [null],
+"reset" : null,
+"nextTextPath" : null,
+},
+{
+"id" : 1,
+"speaker" : null,
+"text" : null
+},
+]

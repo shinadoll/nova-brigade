@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4a7u8ksc8q6r"]
+
+[ext_resource type="Script" path="res://Scripts/signal_tester.gd" id="1_d3ux2"]
+
+[node name="SignalTester" type="Node"]
+script = ExtResource("1_d3ux2")

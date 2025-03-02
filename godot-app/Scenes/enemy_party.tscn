@@ -1,11 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://7qjnoyalpq5a"]
+[gd_scene load_steps=2 format=3 uid="uid://7qjnoyalpq5a"]
 
 [ext_resource type="Script" path="res://Scripts/party.gd" id="1_tpmfs"]
-[ext_resource type="PackedScene" uid="uid://dgidmk0uh1og6" path="res://Scenes/Enemies/fish.tscn" id="2_lnsut"]
 
 [node name="EnemyParty" type="Node"]
 script = ExtResource("1_tpmfs")
 partyType = "enemy"
-size = 1
-
-[node name="Fish" parent="." instance=ExtResource("2_lnsut")]

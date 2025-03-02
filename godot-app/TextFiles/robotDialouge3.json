@@ -1,0 +1,27 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "COIL"],
+"initialCastState" : [0, 0, 0, null],
+"battleEnemies" : [],
+"reset" : true,
+"nextTextPath" : "res://TextFiles/maidDialouge1.json",
+},
+{
+"id" : 1,
+"speaker" : "Terra",
+"frame" : [0, 0, 3, null],
+"text" : "NOOOOO!!! I wanted to dissect your components!"
+},
+{
+"id" : 2,
+"speaker" : "Ashe",
+"frame" : [0, 3, 3, null],
+"text" : "\"Flesh beings\"..."
+},
+{
+"id" : 3,
+"speaker" : "Dizzy",
+"frame" : [3, 3, 3, null],
+"text" : "Aww... I've always wanted to befriend a robot..."
+},
+]

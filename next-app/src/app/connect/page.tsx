@@ -5,13 +5,13 @@ import ActionButton from "@/app/ui/ActionButton/page.tsx";
 export default function Page() {
   return (
     <div>
-      <ActionButton actionNickname="Disentangle" actionCode="disentangle" />
-      <ActionButton actionNickname="Recombobulate" actionCode="recombobulate" />
+      <ActionButton actionNickname="Disentangle" actionCode="0" />
+      <ActionButton actionNickname="Recombobulate" actionCode="1" />
       <ActionButton
         actionNickname="Transubstantiate"
-        actionCode="transubstantiate"
+        actionCode="2"
       />
-      <ActionButton actionNickname="Gun" actionCode="gun" />
+      <ActionButton actionNickname="Gun" actionCode="3" />
     </div>
   );
 }

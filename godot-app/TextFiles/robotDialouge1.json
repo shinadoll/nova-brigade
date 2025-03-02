@@ -1,0 +1,30 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "COIL"],
+"initialCastState" : [0, 0, 0, 0],
+"battleEnemies" : ["res://Scenes/Enemies/robot.tscn"],
+"reset" : true,
+"nextTextPath" : "res://TextFiles/robotDialouge2.json",
+},
+{
+"speaker" : "C.O.I.L",
+"frame" : [0, 0, 0, 0],
+"text" : "W-E-L-C-O-M-E I-N-T-R-U-D-E-R-S! M-Y N-A-M-E I-S C-O-I-L! W-H-I-C-H S-T-A-N-D-S F-O-R C-O-G-N-I-T-I-V-E O-M-N-I-D-I-R-E-C-T-I-O-N-A-L I-N-T-E-L-L-I-G-E-N-T L-A-M-I-N-A-T-O-R! E-L-I-M-I-N-A-T-I-O-N M-O-D-E N-O-W L-O-A-D-I-N-G . . ."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [3, 0, 0, 0],
+"text" : "Please, we don’t want to fight! We just want to take the train back to the station.
+Ashe: I don't think it can be reasoned with."
+},
+{
+"speaker" : "Terra",
+"frame" : [0, 0, 1, 0],
+"text" : "You were a LAMINATOR?! Can I PLEASE study your component make-up after we’re done kicking your metallic butt?"
+},
+{
+"speaker" : "C.O.I.L",
+"frame" : [0, 0, 0, 0],
+"text" : "P-L-E-A-S-E H-O-L-D S-T-I-L-L. T-H-I-S W-I-L-L O-N-L-Y H-U-R-T F-O-R A S-E-C-O-N-D."
+},
+]

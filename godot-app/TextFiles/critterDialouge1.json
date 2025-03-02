@@ -1,0 +1,74 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "Pibby"],
+"initialCastState" : [0, 0, 0, null],
+"battleEnemies" : ["res://Scenes/Enemies/critter.tscn"],
+"reset" : true,
+"nextTextPath" : "res://TextFiles/critterDialouge2.json",
+},
+{
+"speaker" : "Dizzy",
+"frame" : [1, 0, 0, null],
+"text" : "First mission~ First mission~ The Nova Brigade is here to kick enemy butt!"
+},
+{
+"speaker" : "Terra",
+"frame" : [1, 0, 2, null],
+"text" : "I thought an interdimensional train car would look a little more... impressive."
+},
+{
+"speaker" : "Ashe",
+"frame" : [1, 1, 2, null],
+"text" : "This should be a piece of cake."
+},
+{
+"speaker" : "Pibby",
+"frame" : [0, 0, 0, 0],
+"text" : "..."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [1, 0, 0, 0],
+"text" : "OOOH! Look! There's a cute little critter over there!!"
+},
+{
+"speaker" : "Terra",
+"frame" : [0, 0, 2, 0],
+"text" : "This appears to be a [name] from [system]. Theyre typically very docile."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [1, 0, 0, 0],
+"text" : "Aww.. what a cute little guy. Are you lost? Come here~ it’ll be okay! pspspsps"
+},
+{
+"speaker" : "Pibby",
+"frame" : [1, 0, 0, 0],
+"text" : "..."
+},
+{
+"speaker" : "Ashe",
+"frame" : [0, 2, 0, 0],
+"text" : "I get the feeling that thing isn’t lost. We should be careful."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [1, 2, 0, 0],
+"text" : "It cant be *that* bad right? Nice doggie. *petpet*"
+},
+{
+"speaker" : "Pibby",
+"frame" : [3, 0, 0, 0],
+"text" : "*hisses*"
+},
+{
+"speaker" : "Terra",
+"frame" : [0, 0, 2, 0],
+"text" : "Interesting... this one seems much more aggressive than what I’ve read online."
+},
+{
+"speaker" : "Ashe",
+"frame" : [0, 3, 0, 0],
+"text" : "*facepalm* ..."
+},
+]

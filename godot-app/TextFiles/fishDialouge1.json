@@ -1,0 +1,59 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "Gilly"],
+"initialCastState" : [1, 0, 0, 0],
+"battleEnemies" : ["res://Scenes/Enemies/fish.tscn"],
+"reset" : true,
+"nextTextPath" : "res://TextFiles/fishDialouge2.json",
+},
+{
+"speaker" : "Dizzy",
+"frame" : [1, 0, 0, 0],
+"text" : "Look! A passenger? Hello there!"
+},
+{
+"speaker" : "Gilly",
+"frame" : [1, 0, 0, 1],
+"text" : "Hiiii..."
+},
+{
+"speaker" : "Ashe",
+"frame" : [0, 2, 0, 0],
+"text" : "Umm... hi."
+},
+{
+"speaker" : "Terra",
+"frame" : [0, 0, 2, 0],
+"text" : "Sooo... a Dorid from Selaria. Very interesting."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [2, 0, 0, 0],
+"text" : "You should run while you can! It’s not safe on here!"
+},
+{
+"speaker" : "Gilly",
+"frame" : [0, 0, 0, 1],
+"text" : "Run? Why would I run? I’m riding for my desires-sake. To achieve my greatest hopes and dreams once deemed impossible. This place is safe. This is my new home."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [2, 0, 0, 1],
+"text" : "Wha-?"
+},
+{
+"speaker" : "Terra",
+"frame" : [2, 0, 2, 0],
+"text" : "Desires? This just got interesting…"
+},
+{
+"speaker" : "Ashe",
+"frame" : [2, 2, 2, 0],
+"text" : "If you won’t step aside, I’m afraid we’ll have to do things the hard way."
+},
+{
+"speaker" : "Gilly",
+"frame" : [2, 2, 2, 1],
+"text" : "All invaders will be squashed!"
+},
+]

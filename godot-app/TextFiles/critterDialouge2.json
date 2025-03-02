@@ -1,0 +1,24 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "Pibby"],
+"initialCastState" : [0, 0, 0, 1],
+"battleEnemies" : ["res://Scenes/Enemies/critter_final.tscn"],
+"reset" : false,
+"nextTextPath" : "res://TextFiles/critterDialouge3.json",
+},
+{
+"speaker" : "Dizzy",
+"frame" : [3, 2, 2, 1],
+"text" : "Woah! N-nice kitty... creature... thing...? I don’t know what’s going on!"
+},
+{
+"speaker" : "Ashe",
+"frame" : [3, 2, 2, 1],
+"text" : "Well... that was definitely unexpected."
+},
+{
+"speaker" : "Terra",
+"frame" : [3, 2, 2, 1],
+"text" : "I’ve never seen anything like this before..."
+},
+]

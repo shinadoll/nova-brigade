@@ -1,0 +1,74 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "Madeline"],
+"initialCastState" : [0, 0, 0, 0],
+"battleEnemies" : [],
+"reset" : true,
+"nextTextPath" : "res://TextFiles/lesbianDialouge1.json",
+},
+{
+"speaker" : "Madeline",
+"frame" : [0, 0, 0, 0],
+"text" : "Did I... do good? Beatrice, L-lizelle, please... take me with you. To eternal paradise."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [3, 3, 3, null],
+"text" : "..."
+},
+{
+"speaker" : "Ashe",
+"frame" : [3, 3, 3, null],
+"text" : "This is getting pretty depressing."
+},
+{
+"speaker" : "Terra",
+"frame" : [3, 3, 2, null],
+"text" : "Eternal paradise..."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [3, 3, 3, null],
+"text" : "..."
+},
+{
+"speaker" : "Ashe",
+"frame" : [3, 3, 3, null],
+"text" : "..."
+},
+{
+"speaker" : "Terra",
+"frame" : [3, 3, 3, null],
+"text" : "..."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [0, 3, 3, null],
+"text" : "Let's try not to worry too much about how we got here. We should focus on the mission at hand. Recover the Cosmic Express, and make it big on our first mission with flying colors. Right?"
+},
+{
+"speaker" : "Terra",
+"frame" : [0, 0, 3, null],
+"text" : "I can't help but yearn for curiosity and the sake of scientific knowledge, but I suppose I’ll refrain for the sake of the mission..."
+},
+{
+"speaker" : "Dizzy",
+"frame" : [3, 0, 0, null],
+"text" : "You’re right. But I can't help but feel sorry for all of them... Who knows what lies beyond the door. But I know we can handle it as long as we stick together!"
+},
+{
+"speaker" : "Ashe",
+"frame" : [0, 1, 0, null],
+"text" : "Thats the spirit."
+},
+{
+"speaker" : "Terra",
+"frame" : [0, 1, 1, null],
+"text" : "Theres the Dizzy we know and love!"
+},
+{
+"speaker" : "Dizzy",
+"frame" : [1, 1, 1, null],
+"text" : "Okay. Follow my lead! One... Two... Three!"
+},
+]

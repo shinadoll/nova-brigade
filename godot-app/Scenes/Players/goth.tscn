@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://byin41y2o4yn3"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_ic6jo"]
+[ext_resource type="Texture2D" uid="uid://d38wn88kjode7" path="res://Assets/BackSprites/P2_Back_Sprite.png" id="2_0jcpj"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="3_cdv5i"]
+
+[node name="Goth" type="Node"]
+script = ExtResource("1_ic6jo")
+characterName = "Ashe"
+texture = ExtResource("2_0jcpj")
+statsDefault = {
+"atk": 20,
+"def": 25,
+"hp": 80,
+"mp": 0,
+"spd": 30
+}
+
+[node name="Shoot" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_cdv5i")
+shortName = "shoot"
+displayName = "Shoot"
+description = "Ashe shot "
+actor = NodePath("..")
+targetType = 1
+stat = "hp"
+value = 20
+
+[node name="RunGun" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_cdv5i")
+shortName = "runGun"
+displayName = "Run 'n Gun"
+description = "Ashe sprinted toward the action with "
+actor = NodePath("..")
+cost = 20
+stat = "spd"
+value = -20
+
+[node name="Railgun" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_cdv5i")
+shortName = "railgun"
+displayName = "Railgun"
+description = "Ashe blasted "
+actor = NodePath("..")
+targetType = 1
+cost = 20
+stat = "hp"
+value = 50
+
+[node name="Cover" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_cdv5i")
+shortName = "cover"
+displayName = "Cover"
+description = "Ashe gave cover fire for "
+actor = NodePath("..")
+cost = 20
+stat = "atk"
+value = -15

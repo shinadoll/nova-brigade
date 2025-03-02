@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc7f7tlcll2pl"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_fq7yk"]
+[ext_resource type="Texture2D" uid="uid://clbmbnfonb5pr" path="res://Assets/BackSprites/P3_Back_Sprite.png" id="2_vi3i6"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="3_8hcx4"]
+
+[node name="Brains" type="Node"]
+script = ExtResource("1_fq7yk")
+characterName = "Terra"
+texture = ExtResource("2_vi3i6")
+statsDefault = {
+"atk": 30,
+"def": 15,
+"hp": 80,
+"mp": 0,
+"spd": 20
+}
+
+[node name="WrenchWack" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_8hcx4")
+shortName = "wrenchWack"
+displayName = "Wrench Wack"
+description = "Terra gave a good wack to "
+actor = NodePath("..")
+targetType = 1
+stat = "hp"
+value = 20
+
+[node name="Contemplate" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_8hcx4")
+shortName = "contemplate"
+displayName = "Contemplate"
+description = "Terra shared the secrets of the universe with "
+actor = NodePath("..")
+cost = 10
+stat = "atk"
+value = -20
+
+[node name="ReverseEngineer" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_8hcx4")
+shortName = "reverseEngineer"
+displayName = "Reverse Engineer"
+description = "Terra reverse engineers "
+actor = NodePath("..")
+targetType = 1
+cost = 10
+stat = "def"
+value = 15
+
+[node name="LockOn" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_8hcx4")
+shortName = "lockOn"
+displayName = "Lock On"
+description = "Terra locks onto "
+actor = NodePath("..")
+targetType = 1
+cost = 20
+stat = "def"
+value = 30

@@ -1,0 +1,30 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", null],
+"initialCastState" : [2, 0, 0, null],
+"battleEnemies" : null,
+"reset" : true,
+"nextTextPath" : "res://TextFiles/fishDialouge1.json",
+},
+{
+"speaker" : "Dizzy",
+"frame" : [2, 0, 0, null],
+"text" : "What the heck was that?! This wasn’t in the mission description AT ALL!"
+},
+{
+"speaker" : "Terra",
+"frame" : [0, 0, 2, null],
+"text" : "It’s possible some of the beings aboard the Cosmic Express are going through a strange form of reality change due to all of the dimension-hopping."
+},
+{
+"speaker" : "Ashe",
+"frame" : [0, 3, 2, null],
+"text" : "I hope we get a pay raise when we bring our report back..."
+},
+{
+"speaker" : "",
+"frame" : [0, 0, 0, null],
+"blank" : true,
+"text" : "The trio head towards the next traincar..."
+},
+]

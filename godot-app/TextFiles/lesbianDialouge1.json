@@ -1,0 +1,105 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "Lizbea"],
+"initialCastState" : [0, 0, 0, 0],
+"battleEnemies" : ["res://Scenes/Enemies/lesbians.tscn"],
+"reset" : true,
+"nextTextPath" : null,
+},
+{
+"id" : 1,
+"speaker" : "Lizelle and Beatrice",
+"frame" : [0, 0, 0, 1],
+"text" : "Give yourself to desire. Lust for temptation. Yearn for what was once unattainable. Free yourself from the boundaries of life. Right and wrong shall render themselves meaningless in our new haven. All that ails thee shall be restored. Life will become pure and eternal bliss!"
+},
+{
+"id" : 2,
+"speaker" : "Dizzy",
+"frame" : [2, 0, 0, 0],
+"text" : "You can’t do this! And what does this even have to do with Cosmic Express?!"
+},
+{
+"id" : 3,
+"speaker" : "Ashe",
+"frame" : [0, 2, 0, 0],
+"text" : "Good point."
+},
+{
+"id" : 4,
+"speaker" : "Terra",
+"frame" : [0, 0, 2, 0],
+"text" : "Yeah... a train as a choice for eternal bliss is pretty questionable."
+},
+{
+"id" : 5,
+"speaker" : "Lizelle",
+"frame" : [0, 0, 0, 0],
+"text" : "We... really like trains..."
+},
+{
+"id" : 6,
+"speaker" : "Beatrice",
+"frame" : [0, 0, 0, 1],
+"text" : "We LOVE them! This is the perfect one for our new haven!"
+},
+{
+"id" : 7,
+"speaker" : "Lizelle",
+"frame" : [0, 0, 0, 2],
+"text" : "It all started 12 years, 2 months, 7 days, 3 hours, 27 minutes ago... On this exact train."
+},
+{
+"id" : 8,
+"speaker" : "Beatrice",
+"frame" : [0, 0, 0, 2],
+"text" : "I remember like it was yesterday. That fateful encounter..."
+},
+{
+"id" : 9,
+"speaker" : "Lizelle",
+"frame" : [0, 0, 0, 2],
+"text" : "You stumbled into the seat next to me, and I knew from the moment we locked eyes. It was destiny."
+},
+{
+"id" : 10,
+"speaker" : "Beatrice",
+"frame" : [0, 0, 0, 1],
+"text" : "That's why we will stop at nothing to make our dreams come true!"
+},
+{
+"id" : 11,
+"speaker" : "Dizzy",
+"frame" : [3, 0, 0, 0],
+"text" : "*teary-eyed* That was beautiful..."
+},
+{
+"id" : 12,
+"speaker" : "Ashe",
+"frame" : [3, 3, 0, 0],
+"text" : "Tch, whatever... Let’s just get this over with already."
+},
+{
+"id" : 13,
+"speaker" : "Terra",
+"frame" : [3, 3, 2, 0],
+"text" : "But I still have SO many questions about the technological side of actualizing desires into tangible matter-"
+},
+{
+"id" : 14,
+"speaker" : "Lizelle",
+"frame" : [0, 0, 0, 1],
+"text" : "The curtains rise on the final act!"
+},
+{
+"id" : 15,
+"speaker" : "Beatrice",
+"frame" : [0, 0, 0, 1],
+"text" : "This is where your hero tale comes to an end!"
+},
+{
+"id" : 16,
+"speaker" : "Lizelle and Beatrice",
+"frame" : [0, 0, 0, 1],
+"text" : "OHH HO HO HO~!"
+},
+]

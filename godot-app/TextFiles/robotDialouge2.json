@@ -1,0 +1,15 @@
+[
+{
+"cast" : ["Dizzy", "Ashe", "Terra", "COIL"],
+"initialCastState" : [0, 0, 0, 1],
+"battleEnemies" : ["res://Scenes/Enemies/robot_final.tscn"],
+"reset" : false,
+"nextTextPath" : "res://TextFiles/robotDialouge3.json",
+},
+{
+"id" : 1,
+"speaker" : "C.O.I.L X",
+"frame" : [0, 0, 0, 1],
+"text" : "U-L-T-I-M-A-T-E T-E-C-H-N-O-L-O-G-Y... O-B-S-E-R-V-E, F-L-E-S-H B-E-I-N-G-S. T-H-I-S I-S W-H-A-T P-E-A-K P-E-R-F-O-R-M-A-N-C-E L-O-O-K-S L-I-K-E!"
+},
+]

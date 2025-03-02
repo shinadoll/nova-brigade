@@ -1,20 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://dgidmk0uh1og6"]
+[gd_scene load_steps=4 format=3 uid="uid://dgidmk0uh1og6"]
 
 [ext_resource type="Script" path="res://Scripts/character.gd" id="1_bjqm7"]
-[ext_resource type="PackedScene" uid="uid://1wsmb6ysvx1c" path="res://Scenes/Actions/test_action.tscn" id="2_pbsvs"]
+[ext_resource type="Texture2D" uid="uid://do48foeq6l52g" path="res://Assets/WaterBoss_sprite.png" id="2_ht0ob"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="3_03xkw"]
 
 [node name="Fish" type="Node"]
 script = ExtResource("1_bjqm7")
+characterName = "Gilly"
+texture = ExtResource("2_ht0ob")
 statsDefault = {
-"atk": 0,
-"def": 0,
+"atk": 20,
+"def": 15,
 "hp": 20,
-"lck": 0,
-"mAtk": 0,
-"mDef": 0,
 "mp": 0,
-"spd": 5
+"spd": 10
 }
 
-[node name="TestAction" parent="." instance=ExtResource("2_pbsvs")]
-displayName = "Fish"
+[node name="Splash" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_03xkw")
+shortName = "splash"
+displayName = "Splash"
+description = "Gilly splashed high pressure water at "
+actor = NodePath("..")
+stat = "hp"
+value = 30
+
+[node name="StickyMucus" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_03xkw")
+shortName = "stickyMucus"
+displayName = "Sticky Mucus"
+description = "Gilly uses a sticky mucus to cover "
+actor = NodePath("..")
+stat = "spd"
+value = 5

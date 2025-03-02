@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdqgu7sg0snna"]
+
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_jcyar"]
+[ext_resource type="Texture2D" uid="uid://bvvkm2xhcbkse" path="res://Assets/BackSprites/P1_Back_Sprite.png" id="2_p6f66"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="3_fwoaa"]
+
+[node name="Leader" type="Node"]
+script = ExtResource("1_jcyar")
+characterName = "Dizzy"
+texture = ExtResource("2_p6f66")
+statsDefault = {
+"atk": 25,
+"def": 30,
+"hp": 80,
+"mp": 0,
+"spd": 15
+}
+
+[node name="Strike" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_fwoaa")
+shortName = "strike"
+displayName = "Strike"
+description = "Dizzy struck "
+actor = NodePath("..")
+targetType = 1
+stat = "hp"
+value = 20
+
+[node name="HeavyAttack" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_fwoaa")
+shortName = "heavyAttack"
+displayName = "Heavy Attack"
+description = "Dizzy swung her hammer at "
+actor = NodePath("..")
+targetType = 1
+cost = 12
+stat = "hp"
+value = 40
+
+[node name="Heal" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_fwoaa")
+shortName = "heal"
+displayName = "Heal"
+description = "Dizzy helped out "
+actor = NodePath("..")
+cost = 10
+stat = "hp"
+value = -50
+
+[node name="Defend" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("3_fwoaa")
+shortName = "defend"
+displayName = "Defend"
+description = "Dizzy defended "
+actor = NodePath("..")
+cost = 5
+stat = "def"
+value = -30
