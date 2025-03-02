@@ -16,12 +16,11 @@ statsDefault = {
 "spd": 20
 }
 
-[node name="YuriBeam" type="Node" parent="." node_paths=PackedStringArray("actor")]
+[node name="YuriBeam" type="Node" parent="."]
 script = ExtResource("3_xjn1q")
 shortName = "yuriBeam"
 displayName = "Yuri Beam"
 description = "Lizell and Beatrice blasted concentrated yuri at "
-actor = NodePath("")
 stat = "hp"
 value = 50
 

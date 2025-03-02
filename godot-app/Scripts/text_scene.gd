@@ -22,7 +22,7 @@ var characterImageFiles = {
 	
 	"Pibby" : ["res://Assets/CritterBoss_sprite.png", "res://Assets/critter_p2.png"],
 	"Gilly" : ["res://Assets/WaterBoss_sprite.png", "res://Assets/Alt_Sprites/fish_openmouth_sprite.png", "res://Assets/Water_p2.png"],
-	"COIl" : ["res://Assets/ComputerBoss_sprite.png", "res://Assets/computer_p2.png"],
+	"COIL" : ["res://Assets/ComputerBoss_sprite.png", "res://Assets/computer_p2.png"],
 	"Madeline" : ["res://Assets/NerdBoss_sprite.png", "res://Assets/nerd_p2.png"],
 	"Lizbea" : ["res://Assets/FinalBoss_sprite.png", "res://Assets/Alt_Sprites/Boss_openmouth_sprite.png", "res://Assets/Alt_Sprites/Boss_sad_sprite.png", "res://Assets/final_p2.png"],
 }
@@ -42,9 +42,12 @@ func _unhandled_input(event: InputEvent) -> void:
 		if lineIndex < currentDialouge.size():
 			nextLine()
 		else:
-			if currentDialouge[0].battleEnemies != null:
+			if currentDialouge[0].nextTextPath == null:
+				get_parent().initiateEnd()
+			elif currentDialouge[0].battleEnemies != null:
 				get_parent().initiateBattle(currentDialouge[0].battleEnemies, currentDialouge[0].reset, currentDialouge[0].nextTextPath)
 			else:
+				print("next text")
 				get_parent().initiateText(currentDialouge[0].nextTextPath)
 
 func nextLine():

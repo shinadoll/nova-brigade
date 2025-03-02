@@ -4,7 +4,7 @@
 "initialCastState" : [0, 0, 0, 0],
 "battleEnemies" : ["res://Scenes/Enemies/lesbians.tscn"],
 "reset" : true,
-"nextTextPath" : null,
+"nextTextPath" : "res://TextFiles/lesbianDialouge2.json",
 },
 {
 "id" : 1,

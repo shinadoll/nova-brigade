@@ -7,10 +7,14 @@
 "nextTextPath" : "res://TextFiles/maidDialouge2.json",
 },
 {
-"id" : 1,
 "speaker" : "Madeline",
 "frame" : [0, 0, 0, 0],
-"text" : "A journey across dimensions where two lovers may finally fulfill their destiny. The red hot passion of becoming one! If  I will ignore my heart no longer! Indulge in temptation. Give in to desire. We are but her loyal disciples, giving into their wicked bliss. Mere stepping stones to see their eternal paradise come to life! The pests want to put a wrench in our plan, in her perfect vision. They must be stopped at all costs, for it is my sworn duty as her number one follower!"
+"text" : "A journey across dimensions where two lovers may finally fulfill their destiny. The red hot passion of becoming one! I will ignore my heart no longer! Indulge in temptation. Give in to desire. We are but her loyal disciples, giving into their wicked bliss." 
+},
+{
+"speaker" : "Madeline",
+"frame" : [0, 0, 0, 0],
+"text" : "Mere stepping stones to see their eternal paradise come to life! The pests want to put a wrench in our plan, in her perfect vision. They must be stopped at all costs, for it is my sworn duty as her number one follower!"
 },
 {
 "id" : 2,

@@ -2,34 +2,37 @@
 {
 "cast" : ["Dizzy", "Ashe", "Terra", "Gilly"],
 "initialCastState" : [0, 0, 0, null],
-"battleEnemies" : [],
+"battleEnemies" : null,
 "reset" : true,
 "nextTextPath" : "res://TextFiles/robotDialouge1.json",
 },
 {
-"id" : 1,
 "speaker" : "Dizzy",
 "frame" : [2, 0, 0, null],
 "text" : "Desire? I wonder what she was talking about?"
 },
 {
-"id" : 2,
 "speaker" : "Terra",
 "frame" : [0, 0, 2, null],
 "text" : "The cross between dimension-hopping phenomena paired with intense feelings of desire could lead to interesting side effects... The curiosity is killing me! We have to find out!"
 },
 {
-"id" : 3,
 "speaker" : "Ashe",
 "frame" : [0, 2, 0, null],
 "text" : "I have a feeling we’ll learn soon enough..."
 },
 {
-"id" : 4,
 "speaker" : "Train Intercom",
 "frame" : [0, 0, 0, null],
 "sfx" : null,
 "blank" : true,
-"text" : "ATTENTIONNNNN ALL PASSENGERS OF THE COSMIC EXPRESS! THIS IS YOUR LOVELY LEADERS SPEAKING. AS A REMINDER, COMPLEMENTARY BEVERAGES WILL BE PASSED OUT SHORTLY. SECONDLY, WE HAVE RECEIVED WORD OF INTRUDERS. FEAR NOT, THEY ARE BEING TAKEN CARE OF AS WE SPEAK. ALL LOYAL DISCIPLES, SIT BACK AND RELAX. WE INSIST. FREE YOURSELF FROM THE BOUNDARIES OF LIFE. REST EASY AS WE DRIVE YOU TOWARD YOUR DEEPEST DESIRES! OHH HO HO HO~!"
+"text" : "ATTENTIONNNNN ALL PASSENGERS OF THE COSMIC EXPRESS! THIS IS YOUR LOVELY LEADERS SPEAKING. AS A REMINDER, COMPLEMENTARY BEVERAGES WILL BE PASSED OUT SHORTLY. SECONDLY, WE HAVE RECEIVED WORD OF INTRUDERS."
+},
+{
+"speaker" : "Train Intercom",
+"frame" : [0, 0, 0, null],
+"sfx" : null,
+"blank" : true,
+"text" : "FEAR NOT, THEY ARE BEING TAKEN CARE OF AS WE SPEAK. ALL LOYAL DISCIPLES, SIT BACK AND RELAX. WE INSIST. FREE YOURSELF FROM THE BOUNDARIES OF LIFE. REST EASY AS WE DRIVE YOU TOWARD YOUR DEEPEST DESIRES! OHH HO HO HO~!"
 },
 ]

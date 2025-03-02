@@ -9,7 +9,7 @@ script = ExtResource("1_svh06")
 characterName = "Pibby"
 texture = ExtResource("2_vmsm5")
 statsDefault = {
-"atk": 10,
+"atk": 50,
 "def": 10,
 "hp": 10,
 "mp": 0,

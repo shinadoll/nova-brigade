@@ -40,6 +40,7 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 
 [node name="ColorRect" type="ColorRect" parent="UI"]
+layout_mode = 0
 offset_left = 24.0
 offset_top = 856.0
 offset_right = 1896.0

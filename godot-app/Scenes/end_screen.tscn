@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccxbrdligk73q"]
+
+[ext_resource type="Script" path="res://Scripts/end_screen.gd" id="1_o8ny5"]
+[ext_resource type="Texture2D" uid="uid://clnfhchf0osrr" path="res://Assets/EndCard.png" id="2_sl8p3"]
+
+[node name="EndScreen" type="Node2D"]
+script = ExtResource("1_o8ny5")
+
+[node name="EndCard" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_sl8p3")

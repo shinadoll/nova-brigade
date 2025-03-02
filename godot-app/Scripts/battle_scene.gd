@@ -6,6 +6,7 @@ var reset : bool
 
 @onready var timer = $Timer
 @onready var textBox = $Label
+@onready var moveTextBox = $MoveList
 
 var turn = 0
 func _ready():
@@ -34,6 +35,10 @@ func _ready():
 		EnemyParty.getCharacter(i).reset()
 	doTurn()
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("skip"):
+		get_parent().initiateText(nextTextPath)
+
 func doTurn():
 	while true:
 		textBox.text = ""
@@ -53,6 +58,7 @@ func doTurn():
 			var current = characterList[i]
 			var index : int
 			var nextAction : Action
+			
 			print(characterList[0].characterName + " : " + str(characterList[0].stats))
 			print(characterList[1].characterName + " : " + str(characterList[1].stats))
 			print(characterList[2].characterName + " : " + str(characterList[2].stats))
@@ -63,6 +69,8 @@ func doTurn():
 			
 			#player party
 			if current.get_parent() == PlayerParty:
+				var moveListString = current.characterName + "HP : " + str(current.stats["hp"]) + "\n" + "1. " + current.getMove(0).displayName + "\n" + "2. " + current.getMove(1).displayName + "\n" + "3. " + current.getMove(2).displayName + "\n" + "4. " + current.getMove(3).displayName + "\n"
+				moveTextBox.text = moveListString
 				index = await SignalTester.playerInput
 				nextAction = current.getMove(index)
 			
@@ -77,7 +85,8 @@ func doTurn():
 					newTarget = [PlayerParty.getCharacter(0)]
 					for j in range(PlayerParty.size):
 						if newTarget[0].stats[nextAction.stat] > PlayerParty.get_child(j).stats[nextAction.stat]:
-							newTarget = [PlayerParty.get_child(j)]
+							if PlayerParty.get_child(j).stats["hp"] > 0:
+								newTarget = [PlayerParty.get_child(j)]
 				nextAction.TARGET_TYPES.SINGLE_ENEMY:
 					newTarget = [EnemyParty.getCharacter(0)]
 					for j in range(EnemyParty.size):

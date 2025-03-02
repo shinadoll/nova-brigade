@@ -11,7 +11,7 @@ texture = ExtResource("2_vi3i6")
 statsDefault = {
 "atk": 30,
 "def": 15,
-"hp": 80,
+"hp": 10,
 "mp": 0,
 "spd": 20
 }
@@ -19,7 +19,7 @@ statsDefault = {
 [node name="WrenchWack" type="Node" parent="." node_paths=PackedStringArray("actor")]
 script = ExtResource("3_8hcx4")
 shortName = "wrenchWack"
-displayName = "Wrench Wack"
+displayName = "Wrench"
 description = "Terra gave a good wack to "
 actor = NodePath("..")
 targetType = 1
@@ -39,7 +39,7 @@ value = -20
 [node name="ReverseEngineer" type="Node" parent="." node_paths=PackedStringArray("actor")]
 script = ExtResource("3_8hcx4")
 shortName = "reverseEngineer"
-displayName = "Reverse Engineer"
+displayName = "Reverse Eng."
 description = "Terra reverse engineers "
 actor = NodePath("..")
 targetType = 1

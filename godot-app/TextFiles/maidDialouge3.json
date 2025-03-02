@@ -2,13 +2,13 @@
 {
 "cast" : ["Dizzy", "Ashe", "Terra", "Madeline"],
 "initialCastState" : [0, 0, 0, 0],
-"battleEnemies" : [],
+"battleEnemies" : null,
 "reset" : true,
 "nextTextPath" : "res://TextFiles/lesbianDialouge1.json",
 },
 {
 "speaker" : "Madeline",
-"frame" : [0, 0, 0, 0],
+"frame" : [0, 0, 0, 1],
 "text" : "Did I... do good? Beatrice, L-lizelle, please... take me with you. To eternal paradise."
 },
 {

@@ -2,7 +2,7 @@
 {
 "cast" : ["Dizzy", "Ashe", "Terra", "COIL"],
 "initialCastState" : [0, 0, 0, null],
-"battleEnemies" : [],
+"battleEnemies" : null,
 "reset" : true,
 "nextTextPath" : "res://TextFiles/maidDialouge1.json",
 },

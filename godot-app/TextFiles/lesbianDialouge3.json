@@ -2,9 +2,10 @@
 {
 "cast" : ["Dizzy", "Ashe", "Terra", "Lizbea"],
 "initialCastState" : [0, 0, 0, 0],
-"battleEnemies" : [],
+"battleEnemies" : null,
 "reset" : true,
 "nextTextPath" : null,
+"endTag" : true
 },
 {
 "id" : 1,
